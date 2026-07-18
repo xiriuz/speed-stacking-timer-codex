@@ -5,6 +5,8 @@
 
 두 손으로 준비하고 손을 떼면 시작되며, 다시 두 손으로 터치하면 멈추는 Android 스피드 스태깅 타이머입니다.
 
+앱 패키지는 `com.xiriuz.speedstackingtimer.codex`입니다. 기존 `com.xiriuz.speedstackingtimer` 앱과 충돌하지 않으며 두 버전을 동시에 설치할 수 있습니다.
+
 ## APK 다운로드
 
 1. [최신 Release](https://github.com/xiriuz/speed-stacking-timer-codex/releases/latest)를 엽니다.
@@ -84,4 +86,3 @@ git push origin v1.0.0
 ```
 
 릴리즈 서명 정보는 GitHub Actions Secrets에만 보관하며 저장소에는 키 파일이나 비밀번호를 커밋하지 않습니다.
-
