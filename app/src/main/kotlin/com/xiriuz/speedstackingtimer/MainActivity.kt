@@ -457,8 +457,8 @@ private fun signalFor(phase: TimerPhase): Color = when (phase) {
 
 private fun instructionFor(phase: TimerPhase): String = when (phase) {
     TimerPhase.IDLE -> "양 끝 패드에 손을 올리세요"
-    TimerPhase.HOLDING_GREEN -> "초록불 · 그대로 유지하세요"
-    TimerPhase.ARMED_RED -> "빨간불 · 양손을 떼세요"
+    TimerPhase.HOLDING_GREEN -> "그대로 유지하세요"
+    TimerPhase.ARMED_RED -> "양손을 떼세요"
     TimerPhase.RUNNING -> "측정 중 · 양손으로 멈추세요"
     TimerPhase.STOPPED -> "기록 완료 · 양손을 떼세요"
 }
