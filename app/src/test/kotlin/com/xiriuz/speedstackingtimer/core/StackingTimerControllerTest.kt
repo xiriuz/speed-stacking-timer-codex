@@ -78,6 +78,19 @@ class StackingTimerControllerTest {
         assertEquals(700, controller.snapshot().elapsedMillis)
     }
 
+    @Test
+    fun `reset clears the result and returns to idle`() {
+        armTimer()
+        controller.onHandsChanged(false, false)
+        clock.advanceMillis(700)
+        controller.onHandsChanged(true, true)
+
+        controller.reset()
+
+        assertEquals(TimerPhase.IDLE, controller.snapshot().phase)
+        assertEquals(0, controller.snapshot().elapsedMillis)
+    }
+
     private fun armTimer() {
         controller.onHandsChanged(true, true)
         clock.advanceMillis(500)
