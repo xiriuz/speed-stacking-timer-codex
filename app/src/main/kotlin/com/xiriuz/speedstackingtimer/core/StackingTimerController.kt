@@ -60,6 +60,14 @@ class StackingTimerController(
         }
     }
 
+    fun reset() {
+        stopwatch.reset()
+        phase = TimerPhase.IDLE
+        holdStartedAtNanos = 0L
+        leftPressed = false
+        rightPressed = false
+    }
+
     fun snapshot(): TimerSnapshot = TimerSnapshot(
         phase = phase,
         elapsedMillis = stopwatch.elapsedMillis(),
