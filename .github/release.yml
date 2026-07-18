@@ -1,0 +1,9 @@
+changelog:
+  categories:
+    - title: 새로운 기능
+      labels: [enhancement, feature]
+    - title: 버그 수정
+      labels: [bug, fix]
+    - title: 기타 변경
+      labels: ["*"]
+
